@@ -185,6 +185,14 @@ h3 {
   font-size: inherit;
 }
 .publication-list .venue small::before { content: "· "; }
+.publication-list .venue-type {
+  color: var(--muted);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+.publication-list .venue > .venue-type::after { content: "·"; margin-left: 9px; }
 .publication-list .conference-venue {
   align-items: center;
   margin-top: 10px;
@@ -195,7 +203,7 @@ h3 {
   object-position: left center;
   width: 58px;
 }
-.conference-venue span {
+.conference-venue .venue-details {
   display: flex;
   flex-wrap: wrap;
   gap: 3px 9px;
