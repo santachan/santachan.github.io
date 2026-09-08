@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Yechan Yang — Ph.D. student in Biomedical Engineering at Seoul National University." />
     <title>Yechan Yang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -12,181 +15,109 @@
       <a class="site-name" href="#top">Yechan Yang</a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#news">News</a>
-        <a href="#drawings">Drawings</a>
+        <a href="#publications">Publications</a>
+        <a href="#updates">Updates</a>
+        <a href="./Yechan_Yang_CV.pdf" target="_blank">CV</a>
       </nav>
-      <a class="cv-link" href="./Yechan_Yang_CV.pdf" target="_blank">CV ↗</a>
     </header>
 
     <main id="top">
       <section class="intro" aria-labelledby="intro-title">
-        <img class="profile-photo" src="./profile.jpg" alt="Portrait of Yechan Yang" />
-        <div>
-          <p class="label">Ph.D. Student · Seoul, Korea</p>
-          <h1 id="intro-title">Yechan Yang</h1>
-          <p class="intro-text">
-            I am a Ph.D. student in Biomedical Engineering at Seoul National University. My research interests include interfaces, artificial intelligence, biocomputing, virtual reality, and human-computer interaction.
+        <div class="intro-copy">
+          <p class="kicker">Ph.D. student · Biomedical Engineering</p>
+          <h1 id="intro-title">Hello, I’m Yechan.</h1>
+          <p class="lede">
+            I am a Ph.D. student at Seoul National University, advised by
+            <a href="https://www.bnilab.com/" target="_blank" rel="noreferrer">Prof. Seongjun Park</a>.
+            My work explores interfaces, artificial intelligence, and biocomputing, with roots in virtual reality and human–computer interaction.
           </p>
-          <div class="quick-links" aria-label="Contact and profile links">
+          <p class="contact-links">
             <a href="mailto:santachan@snu.ac.kr">Email</a>
-            <a href="https://www.linkedin.com/in/yechan-yang-764884272" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="https://www.bnilab.com/" target="_blank" rel="noreferrer">BMIL ↗</a>
-            <a href="./Yechan_Yang_CV.pdf" target="_blank">Download CV ↗</a>
-          </div>
+            <a href="https://www.linkedin.com/in/yechan-yang-764884272" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.bnilab.com/" target="_blank" rel="noreferrer">Lab</a>
+            <a href="./Yechan_Yang_CV.pdf" target="_blank">Curriculum vitae</a>
+          </p>
         </div>
+        <img class="profile-photo" src="./profile.jpg" alt="Yechan Yang" />
       </section>
 
       <section class="section" id="about">
-        <div class="section-heading">
-          <p class="label">About</p>
-          <h2>Education &amp; experience</h2>
-        </div>
-        <div class="two-columns">
+        <h2>About</h2>
+        <div class="about-grid">
           <div>
             <h3>Education</h3>
-            <article class="entry">
-              <div><strong>Seoul National University</strong><span>2026 — Present</span></div>
-              <p>Ph.D. in Biomedical Engineering</p>
-            </article>
-            <article class="entry">
-              <div><strong>Korea University</strong><span>2022 — 2024</span></div>
-              <p>M.S. in Computer Science and Engineering</p>
-            </article>
-            <article class="entry">
-              <div><strong>Korea University</strong><span>2016 — 2022</span></div>
-              <p>B.S. in Mechanical Engineering</p>
-            </article>
+            <div class="timeline">
+              <article><time>2026–present</time><p><strong>Seoul National University</strong><br />Ph.D. in Biomedical Engineering</p></article>
+              <article><time>2022–2024</time><p><strong>Korea University</strong><br />M.S. in Computer Science and Engineering</p></article>
+              <article><time>2016–2022</time><p><strong>Korea University</strong><br />B.S. in Mechanical Engineering</p></article>
+            </div>
           </div>
           <div>
             <h3>Research experience</h3>
-            <article class="entry">
-              <div><strong>Seoul National University</strong><span>2025 — Present</span></div>
-              <p>Research Assistant · Biomedical and Neural Interface Lab</p>
-            </article>
-            <article class="entry">
-              <div><strong>Korea Institute of Science and Technology</strong><span>2024 — 2025</span></div>
-              <p>Research Assistant · Webizing Research Lab</p>
-            </article>
-            <article class="entry">
-              <div><strong>Korea University</strong><span>2022 — 2024</span></div>
-              <p>Graduate Research Assistant · Digital Experience Lab</p>
-            </article>
+            <div class="timeline">
+              <article><time>2025–present</time><p><strong>Seoul National University</strong><br />Brain–computer interfaces and biocomputing</p></article>
+              <article><time>2024–2025</time><p><strong>Korea Institute of Science and Technology</strong><br />Signal processing</p></article>
+              <article><time>2022–2024</time><p><strong>Korea University</strong><br />VR, cybersickness, and HCI</p></article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="research">
-        <div class="section-heading">
-          <p class="label">Research</p>
-          <h2>Publications</h2>
+      <section class="section" id="publications">
+        <div class="section-title">
+          <h2>Selected publications</h2>
+          <p>* co-first authors</p>
         </div>
-
-        <a class="project-card" href="https://sites.google.com/view/yechanyang/3-project-parkinson" target="_blank" rel="noreferrer">
-          <span class="project-status">Ongoing</span>
-          <div>
-            <strong>Interface Device for Parkinson’s Disease</strong>
-            <p>An Arduino-based VR interface using a rotating chair and joystick.</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <div class="publication-list">
-          <a class="publication" href="https://sites.google.com/view/yechanyang/1-paper-cop" target="_blank" rel="noreferrer">
-            <span class="year">2026</span><div><strong>From Force Plates to CCTV: Video-based Trunk Motion as a Scalable Surrogate for Postural Sway Assessment</strong><p>Yechan Yang*, Eunhee Chang*, Byounghyun Yoo</p><em>Coming soon</em></div><span>↗</span>
-          </a>
-          <a class="publication" href="https://sites.google.com/view/yechanyang/1-paper-journeyvr" target="_blank" rel="noreferrer">
-            <span class="year">2026</span><div><strong>JourneyVR: Designing for Continuous Workflow Experience in Virtual Reality</strong><p>Minchae Kim, Ryu Jun*, Yechan Yang*, Gerard Jounghyun Kim</p><em>CHI 2026</em></div><span>↗</span>
-          </a>
-          <a class="publication" href="https://sites.google.com/view/yechanyang/1-paper-mini-map" target="_blank" rel="noreferrer">
-            <span class="year">2025</span><div><strong>Effects of Mini-Map Usage and Spatial Ability on Cybersickness in Virtual Reality Navigation</strong><p>Yechan Yang, JunSeo Park, Gerard Jounghyun Kim, Hanseob Kim</p><em>International Journal of Human–Computer Interaction</em></div><span>↗</span>
-          </a>
-          <a class="publication" href="https://streamsplat.pengpark.com/" target="_blank" rel="noreferrer">
-            <span class="year">2025</span><div><strong>StreamSplat: A Hybrid Client-Server Architecture for Neural Graphics using Depth-based Fusion on the Web</strong><p>Sehyeon Park*, Yechan Yang*, Myeongseong Kim, Byounghyun Yoo</p><em>Web3D 2025 · Best Paper Award</em></div><span>↗</span>
-          </a>
-          <a class="publication" href="https://sites.google.com/view/yechanyang/1-paper-mr-military" target="_blank" rel="noreferrer">
-            <span class="year">2025</span><div><strong>The Impact of Observer Presence on Trainees' Mental States and Performance in Remote Military Training with Virtual Humans in Mixed Reality Environment</strong><p>JunSeo Park, Yechan Yang, Gerard Jounghyun Kim, Hanseob Kim</p><em>CHI 2025</em></div><span>↗</span>
-          </a>
-          <a class="publication" href="https://sites.google.com/view/yechanyang/1-paper-balancevr" target="_blank" rel="noreferrer">
-            <span class="year">2025</span><div><strong>BalanceVR: Balance Training to Increase Tolerance to Cybersickness in Immersive Virtual Reality</strong><p>Yechan Yang*, Seonghoon Kang*, Minchae Kim, Gerard Jounghyun Kim, Hanseob Kim</p><em>Springer Virtual Reality</em></div><span>↗</span>
-          </a>
-          <a class="publication" href="https://sites.google.com/view/yechanyang/1-paper-rpg" target="_blank" rel="noreferrer">
-            <span class="year">2024</span><div><strong>RPG: Rotation Technique in VR Locomotion using Peripheral Gaze</strong><p>Jaeyoon Lee, Hanseob Kim, Yechan Yang, Gerard Jounghyun Kim</p><em>ETRA 2024</em></div><span>↗</span>
-          </a>
-        </div>
-
+        <ol class="publication-list">
+          <li><span class="pub-year">2026</span><div><a class="pub-title" href="https://sites.google.com/view/yechanyang/1-paper-cop" target="_blank" rel="noreferrer">Trunk Motion Reflects Center-of-Pressure Dynamics and Supports Markerless Single-Camera Postural Sway Assessment</a><p><strong>Y. Yang*</strong>, E. Chang*, and B. Yoo</p><p class="venue">Scientific Reports</p></div></li>
+          <li><span class="pub-year">2026</span><div><p class="pub-title">1-D Collocated Dual-Gradient Sensory Fibers for Comprehensive Sensing and Decoding of Complex Human Motion and Physiology</p><p>Y. Lee*, S. Jeon*, M. Kim*, J. Won, J. Yeo, K. Jo, S. Lee, K. Park, <strong>Y. Yang</strong>, et al.</p><p class="venue">Advanced Materials</p></div></li>
+          <li><span class="pub-year">2026</span><div><a class="pub-title" href="https://sites.google.com/view/yechanyang/1-paper-journeyvr" target="_blank" rel="noreferrer">JourneyVR: Designing for Continuous Workflow Experience in Virtual Reality</a><p>M. Kim, J. Ryu*, <strong>Y. Yang*</strong>, and G. Kim</p><p class="venue">CHI 2026</p></div></li>
+          <li><span class="pub-year">2025</span><div><a class="pub-title" href="https://sites.google.com/view/yechanyang/1-paper-mini-map" target="_blank" rel="noreferrer">Effects of Mini-Map Usage and Spatial Ability on Cybersickness in Virtual Reality Navigation</a><p><strong>Y. Yang*</strong>, J. Park, G. Kim, and H. Kim</p><p class="venue">International Journal of Human–Computer Interaction</p></div></li>
+          <li><span class="pub-year">2025</span><div><a class="pub-title" href="https://streamsplat.pengpark.com/" target="_blank" rel="noreferrer">StreamSplat: A Hybrid Client-Server Architecture for Neural Graphics using Depth-based Fusion on the Web</a><p>S. Park*, <strong>Y. Yang*</strong>, M. Kim, and B. Yoo</p><p class="venue">Web3D 2025 · Best Paper Award</p></div></li>
+          <li><span class="pub-year">2025</span><div><a class="pub-title" href="https://sites.google.com/view/yechanyang/1-paper-mr-military" target="_blank" rel="noreferrer">The Impact of Observer Presence on Trainees’ Mental States and Performance in Remote Military Training with Virtual Humans in Mixed Reality</a><p>J. Park, <strong>Y. Yang</strong>, G. Kim, and H. Kim</p><p class="venue">CHI 2025</p></div></li>
+          <li><span class="pub-year">2025</span><div><a class="pub-title" href="https://sites.google.com/view/yechanyang/1-paper-balancevr" target="_blank" rel="noreferrer">BalanceVR: VR-Based Balance Training to Increase Tolerance to VR Sickness</a><p><strong>Y. Yang*</strong>, S. Kang*, M. Kim, G. Kim, and H. Kim</p><p class="venue">Virtual Reality</p></div></li>
+          <li><span class="pub-year">2024</span><div><a class="pub-title" href="https://sites.google.com/view/yechanyang/1-paper-rpg" target="_blank" rel="noreferrer">RPG: Rotation Technique in VR Locomotion Using Peripheral Gaze</a><p>J. Lee, H. Kim, <strong>Y. Yang</strong>, and G. Kim</p><p class="venue">ETRA 2024</p></div></li>
+        </ol>
         <details class="more-section">
           <summary>Conference posters <span>5</span></summary>
-          <div class="compact-list">
-            <p><span>2025</span><strong>JourneyVR: Experience Design for Continuous Timed Activities in Virtual Reality</strong><em>ISMAR</em></p>
-            <p><span>2024</span><strong>u-DFOV: User-Activated Dynamic Field of View Restriction for Managing Cybersickness and Task Performance</strong><em>IEEE VR</em></p>
-            <p><span>2024</span><strong>PianoFMS: Real-time Evaluation of Cybersickness by Keyboard Fingering</strong><em>IEEE VR</em></p>
-            <p><span>2023</span><strong>The Effects of Customized Strategies for Reducing VR Sickness</strong><em>VRST</em></p>
-            <p><span>2023</span><strong>FakeBand: Virtual Band Music Performance with Balanced Interface for Individual Score/Rhythm Play and Inter-player Expression Coordination</strong><em>IEEE VR</em></p>
+          <div class="poster-list">
+            <p><time>2025</time><span><strong>JourneyVR</strong> · ISMAR</span></p>
+            <p><time>2024</time><span><strong>u-DFOV</strong> · IEEE VR</span></p>
+            <p><time>2024</time><span><strong>PianoFMS</strong> · IEEE VR</span></p>
+            <p><time>2023</time><span><strong>Customized Strategies for Reducing VR Sickness</strong> · VRST</span></p>
+            <p><time>2023</time><span><strong>FakeBand</strong> · IEEE VR</span></p>
           </div>
         </details>
       </section>
 
-      <section class="section" id="news">
-        <div class="section-heading">
-          <p class="label">News</p>
-          <h2>Recent updates</h2>
+      <section class="section" id="updates">
+        <h2>Recent updates</h2>
+        <div class="updates-list">
+          <article><time datetime="2026-09">Sep 2026</time><p>Selected for the Doctoral Excellence Scholarship (STEM) from the Korea Student Aid Foundation.</p></article>
+          <article><time datetime="2026-08">Aug 2026</time><p>Received the Minister of Health and Welfare Award (1st place) at the 7th NRC Assistive Device Hackathon.</p></article>
+          <article><time datetime="2026-06">Jun 2026</time><p>Selected as an SNU Grand Quest Maker.</p></article>
+          <article><time datetime="2026-04">Apr 2026</time><p>Presented JourneyVR at CHI 2026.</p></article>
+          <article><time datetime="2026-03">Mar 2026</time><p>Started my Ph.D. in Biomedical Engineering at Seoul National University.</p></article>
+          <article><time datetime="2025-11">Nov 2025</time><p>Our mini-map and cybersickness study was accepted by the International Journal of Human–Computer Interaction.</p></article>
+          <article><time datetime="2025-09">Sep 2025</time><p>StreamSplat received the Best Paper Award at Web3D 2025.</p></article>
         </div>
-        <div class="news-list">
-          <article><time>Apr 2026</time><p>JourneyVR was presented at CHI 2026.</p></article>
-          <article><time>Mar 2026</time><p>Started Ph.D. studies in Biomedical Engineering at Seoul National University.</p></article>
-          <article><time>Nov 2025</time><p>The Mini-Map study was accepted by the International Journal of Human–Computer Interaction.</p></article>
-          <article><time>Sep 2025</time><p>StreamSplat received the Best Paper Award at Web3D 2025.</p></article>
-          <article><time>May 2025</time><p>The mixed-reality military training study was presented at CHI 2025.</p></article>
-          <article><time>Jan 2025</time><p>BalanceVR was accepted by Springer Virtual Reality.</p></article>
-        </div>
-        <details class="more-section news-archive">
-          <summary>Earlier updates <span>8</span></summary>
-          <div class="news-list">
-            <article><time>Aug 2024</time><p>Joined the Webizing Research Lab at KIST as a research assistant.</p></article>
-            <article><time>Jul 2024</time><p>Completed an M.S. thesis on mini-map usage, spatial ability, and cybersickness in VR navigation.</p></article>
-            <article><time>Jun 2024</time><p>RPG was presented at ETRA 2024.</p></article>
-            <article><time>Aug 2023</time><p>BalanceVR received the Outstanding Research Award from the Korea Electronics Association.</p></article>
-            <article><time>Apr 2023</time><p>Reverse Optical Flow received the Best Exhibit Center Award at the ITRC Talent Development Competition.</p></article>
-            <article><time>Mar 2023</time><p>FakeBand was presented at IEEE VR 2023.</p></article>
-            <article><time>Sep 2022</time><p>FakeBand received the President’s Award at ICT Challenge 2022.</p></article>
-            <article><time>Aug 2022</time><p>Started graduate studies in Computer Science at Korea University.</p></article>
+        <details class="more-section">
+          <summary>Earlier updates <span>6</span></summary>
+          <div class="updates-list archived-updates">
+            <article><time>May 2025</time><p>Presented our mixed-reality military training study at CHI 2025.</p></article>
+            <article><time>Jan 2025</time><p>BalanceVR was accepted by Virtual Reality.</p></article>
+            <article><time>Aug 2024</time><p>Joined KIST as a research assistant.</p></article>
+            <article><time>Jul 2024</time><p>Completed my M.S. thesis on mini-map use, spatial ability, and cybersickness.</p></article>
+            <article><time>Jun 2024</time><p>Presented RPG at ETRA 2024.</p></article>
+            <article><time>Aug 2023</time><p>BalanceVR received an Outstanding Research Award from the Korea Electronics Association.</p></article>
           </div>
-        </details>
-      </section>
-
-      <section class="section" id="drawings">
-        <div class="section-heading drawing-heading">
-          <div><p class="label">Drawings</p><h2>Sketchbook</h2></div>
-          <p>Selected personal drawing projects.</p>
-        </div>
-        <div class="gallery-group"><h3>Project Me <span>8</span></h3><div class="gallery" data-start="1" data-end="8" data-ext="jpg" data-label="Project Me"></div></div>
-        <div class="gallery-group"><h3>Paint Your Color <span>6</span></h3><div class="gallery" data-start="9" data-end="14" data-ext="png" data-label="Paint Your Color"></div></div>
-        <div class="gallery-group"><h3>Project Movie <span>4</span></h3><div class="gallery" data-start="15" data-end="18" data-ext="png" data-label="Project Movie"></div></div>
-        <details class="more-section gallery-more">
-          <summary>More drawings <span>8</span></summary>
-          <div class="gallery" data-start="19" data-end="26" data-ext="png" data-label="Additional"></div>
         </details>
       </section>
     </main>
 
     <footer>
-      <div><strong>Yechan Yang</strong><p>Ph.D. Student in Biomedical Engineering</p></div>
-      <div class="footer-links"><a href="mailto:santachan@snu.ac.kr">santachan@snu.ac.kr</a><a href="#top">Back to top ↑</a></div>
+      <p>Yechan Yang · Seoul, Korea</p>
+      <p><a href="mailto:santachan@snu.ac.kr">santachan@snu.ac.kr</a></p>
     </footer>
-
-    <script>
-      document.querySelectorAll('.gallery').forEach((gallery) => {
-        const start = Number(gallery.dataset.start);
-        const end = Number(gallery.dataset.end);
-        for (let number = start; number <= end; number += 1) {
-          const image = document.createElement('img');
-          image.src = `./drawings/drawing-${String(number).padStart(2, '0')}.${gallery.dataset.ext}`;
-          image.alt = `${gallery.dataset.label} drawing ${number - start + 1}`;
-          image.loading = 'lazy';
-          gallery.appendChild(image);
-        }
-      });
-    </script>
   </body>
 </html>
