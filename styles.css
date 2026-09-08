@@ -64,14 +64,6 @@ footer {
   min-height: 500px;
   padding: 70px 0 110px;
 }
-.kicker {
-  color: var(--accent);
-  font-size: .78rem;
-  font-weight: 600;
-  letter-spacing: .055em;
-  margin: 0 0 18px;
-  text-transform: uppercase;
-}
 h1,
 h2 {
   font-family: "Source Serif 4", Georgia, serif;
@@ -83,12 +75,14 @@ h1 {
   line-height: 1.02;
   margin: 0;
 }
-.lede {
-  color: #45443f;
-  font-size: clamp(1.08rem, 2vw, 1.26rem);
-  line-height: 1.65;
-  margin: 30px 0 0;
-  max-width: 650px;
+.role {
+  color: #4d4b46;
+  font-size: 1.05rem;
+  margin: 22px 0 0;
+}
+.role strong {
+  color: var(--ink);
+  font-weight: 600;
 }
 .contact-links {
   display: flex;
@@ -178,9 +172,33 @@ h3 {
 }
 .publication-list a.pub-title:hover { color: var(--accent); }
 .publication-list .venue {
+  align-items: baseline;
   color: var(--accent);
+  display: flex;
   font-size: .79rem;
+  flex-wrap: wrap;
+  gap: 3px 9px;
   margin-top: 2px;
+}
+.publication-list .venue small {
+  color: var(--muted);
+  font-size: inherit;
+}
+.publication-list .venue small::before { content: "· "; }
+.publication-list .conference-venue {
+  align-items: center;
+  margin-top: 10px;
+}
+.conference-venue img {
+  height: 34px;
+  object-fit: contain;
+  object-position: left center;
+  width: 58px;
+}
+.conference-venue span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 9px;
 }
 
 .more-section { border-bottom: 1px solid var(--line); margin-top: 28px; }
