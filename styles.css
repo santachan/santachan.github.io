@@ -148,6 +148,14 @@ h3 {
 }
 .timeline p { font-size: .91rem; margin: 0; }
 .timeline strong { font-weight: 600; }
+.timeline-detail,
+.timeline-meta { display: block; }
+.timeline-detail { margin-top: 1px; }
+.timeline-meta {
+  color: var(--muted);
+  font-size: .8rem;
+  margin-top: 4px;
+}
 .timeline-entry {
   align-items: start;
   display: grid;
