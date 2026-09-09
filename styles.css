@@ -194,8 +194,10 @@ h3 {
   line-height: 1.43;
   margin: 0;
   text-decoration: none;
+  transition: color .2s ease;
 }
-.publication-list .pub-title:hover { color: var(--accent); }
+.publication-card:hover .pub-title,
+.publication-card:focus-within .pub-title { color: var(--accent); }
 .publication-list .authors {
   color: #4d4b46;
   font-size: .82rem;
@@ -215,17 +217,32 @@ h3 {
   font-style: italic;
 }
 .publication-list .venue-line span::before { content: "· "; }
+.publication-footer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
 .publication-logo {
   display: block;
+  flex: 0 0 auto;
   height: auto;
-  margin-top: 12px;
-  max-height: 40px;
+  max-height: 42px;
   max-width: 76px;
   object-fit: contain;
   object-position: left center;
   width: auto;
 }
-.publication-logo-wide { max-width: 120px; }
+.publication-logo-wide { max-width: 132px; }
+.publication-logo-sr {
+  height: 38px;
+  max-height: none;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  width: 160px;
+}
 .publication-action {
   border: 1px solid var(--line);
   border-radius: 7px;
@@ -235,7 +252,7 @@ h3 {
   align-items: center;
   font-size: .75rem;
   font-weight: 500;
-  margin-top: 14px;
+  margin: 0;
   padding: 6px 9px;
   text-decoration: none;
 }
