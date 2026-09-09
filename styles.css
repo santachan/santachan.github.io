@@ -95,9 +95,9 @@ h1 {
 }
 .research-interest {
   color: #4d4b46;
-  font-size: .94rem;
+  font-size: clamp(.86rem, 1.3vw, .94rem);
   margin: 18px 0 0;
-  max-width: 560px;
+  white-space: nowrap;
 }
 .contact-links {
   display: flex;
@@ -410,6 +410,10 @@ footer {
   padding-top: 30px;
 }
 footer p { margin: 0; }
+
+@media (max-width: 900px) {
+  .research-interest { white-space: normal; }
+}
 
 @media (max-width: 700px) {
   .site-header {
