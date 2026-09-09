@@ -130,8 +130,7 @@ h3 {
 }
 .timeline time,
 .pub-year,
-.updates-list time,
-.poster-list time {
+.updates-list time {
   color: var(--muted);
   font-size: .79rem;
   font-variant-numeric: tabular-nums;
@@ -147,6 +146,10 @@ h3 {
 }
 .section-title h2 { margin-bottom: 50px; }
 .section-title > p { color: var(--muted); font-size: .78rem; margin: 0; }
+.publication-kind-heading {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
 .publication-list {
   border-top: 1px solid var(--ink);
   list-style: none;
@@ -187,27 +190,48 @@ h3 {
 .publication-list .venue small::before { content: "· "; }
 .publication-list .venue-type {
   color: var(--muted);
-  font-size: .68rem;
+  font-size: .75rem;
   font-weight: 600;
   letter-spacing: .055em;
   text-transform: uppercase;
 }
 .publication-list .venue > .venue-type::after { content: "·"; margin-left: 9px; }
+.publication-list .journal-venue,
 .publication-list .conference-venue {
   align-items: center;
   margin-top: 10px;
 }
+.journal-icon {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  display: inline-flex;
+  flex: 0 0 58px;
+  font-size: .75rem;
+  font-weight: 700;
+  height: 34px;
+  justify-content: center;
+  letter-spacing: -.01em;
+}
+.journal-sr { border-color: #c92a2a; color: #c92a2a; }
+.journal-am { border-color: #222; color: #222; }
+.journal-ijhci { border-color: #1c5f91; color: #1c5f91; }
+.journal-vr { border-color: #075985; color: #075985; }
 .conference-venue img {
   height: 34px;
   object-fit: contain;
   object-position: left center;
   width: 58px;
 }
-.conference-venue .venue-details {
+.conference-venue .venue-details,
+.journal-venue .venue-details {
   display: flex;
   flex-wrap: wrap;
   gap: 3px 9px;
 }
+.poster-heading { margin-top: 64px; }
+.poster-publication-list .pub-title { font-size: 1rem; }
 
 .more-section { border-bottom: 1px solid var(--line); margin-top: 28px; }
 .more-section summary {
@@ -222,17 +246,6 @@ h3 {
 .more-section summary::before { content: "+"; margin-right: 12px; }
 .more-section[open] summary::before { content: "−"; }
 .more-section summary span { color: var(--muted); font-weight: 400; margin-left: auto; }
-.poster-list { padding: 2px 0 17px; }
-.poster-list p {
-  border-top: 1px solid var(--line);
-  display: grid;
-  font-size: .86rem;
-  gap: 26px;
-  grid-template-columns: 50px 1fr;
-  margin: 0;
-  padding: 13px 0;
-}
-
 .updates-list { border-top: 1px solid var(--ink); }
 .updates-list article {
   border-bottom: 1px solid var(--line);
