@@ -99,31 +99,6 @@ h1 {
   margin: 18px 0 0;
   max-width: 560px;
 }
-.expertise-list {
-  border-top: 1px solid var(--line);
-  margin: 19px 0 0;
-  max-width: 590px;
-}
-.expertise-list div {
-  align-items: baseline;
-  border-bottom: 1px solid var(--line);
-  display: grid;
-  gap: 18px;
-  grid-template-columns: 138px minmax(0, 1fr);
-  padding: 9px 0 10px;
-}
-.expertise-list dt {
-  color: var(--ink);
-  font-size: .78rem;
-  font-weight: 600;
-  letter-spacing: .015em;
-}
-.expertise-list dd {
-  color: var(--muted);
-  font-size: .78rem;
-  line-height: 1.55;
-  margin: 0;
-}
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -460,11 +435,6 @@ footer p { margin: 0; }
   .typed-heading {
     min-height: 2.1em;
     white-space: normal;
-  }
-  .expertise-list div {
-    gap: 3px;
-    grid-template-columns: 1fr;
-    padding: 10px 0 11px;
   }
   .about-grid { gap: 58px; grid-template-columns: 1fr; }
   .section { padding: 72px 0 82px; }
