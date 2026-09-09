@@ -93,6 +93,31 @@ h1 {
   color: var(--ink);
   font-weight: 600;
 }
+.research-interest {
+  color: #4d4b46;
+  font-size: .94rem;
+  margin: 18px 0 0;
+  max-width: 560px;
+}
+.skill-list {
+  display: grid;
+  gap: 7px;
+  margin: 18px 0 0;
+}
+.skill-list div {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 142px minmax(0, 1fr);
+}
+.skill-list dt {
+  font-size: .76rem;
+  font-weight: 600;
+}
+.skill-list dd {
+  color: var(--muted);
+  font-size: .78rem;
+  margin: 0;
+}
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -429,6 +454,10 @@ footer p { margin: 0; }
   .typed-heading {
     min-height: 2.1em;
     white-space: normal;
+  }
+  .skill-list div {
+    gap: 2px;
+    grid-template-columns: 1fr;
   }
   .about-grid { gap: 58px; grid-template-columns: 1fr; }
   .section { padding: 72px 0 82px; }
