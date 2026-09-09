@@ -204,6 +204,21 @@ h3 {
   line-height: 1;
   padding: 4px 8px;
 }
+.publication-type-journal {
+  background: #e8f4ee;
+  border-color: #cce5d8;
+  color: #27624a;
+}
+.publication-type-international {
+  background: #eaf0fb;
+  border-color: #d1dcf2;
+  color: #315c9d;
+}
+.publication-type-domestic {
+  background: #fff1dc;
+  border-color: #f0d8b2;
+  color: #8b5a17;
+}
 .publication-metric {
   background: #fbfaf8;
   color: #6b665e;
