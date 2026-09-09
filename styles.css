@@ -195,7 +195,7 @@ h3 {
   margin: 0;
   text-decoration: none;
 }
-.publication-list a.pub-title:hover { color: var(--accent); }
+.publication-list .pub-title:hover { color: var(--accent); }
 .publication-list .authors {
   color: #4d4b46;
   font-size: .82rem;
