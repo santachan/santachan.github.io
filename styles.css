@@ -162,8 +162,6 @@ h3 {
   border: 1px solid #ebe8e2;
   border-radius: 18px;
   box-shadow: 0 5px 18px rgba(32, 32, 30, .045);
-  display: flex;
-  min-height: 190px;
   overflow: hidden;
   transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
 }
@@ -172,24 +170,10 @@ h3 {
   box-shadow: 0 9px 24px rgba(32, 32, 30, .07);
   transform: translateY(-1px);
 }
-.publication-visual {
-  align-items: center;
-  background: #f7f7f5;
-  border-right: 1px solid #eeeae4;
-  display: flex;
-  flex: 0 0 174px;
-  justify-content: center;
-  padding: 26px;
-}
-.publication-visual img {
-  height: auto;
-  max-height: 78px;
-  object-fit: contain;
-  width: 100%;
-}
 .publication-content {
   min-width: 0;
   padding: 22px 26px 24px;
+  width: 100%;
 }
 .publication-list .pub-year {
   background: #f7e9e5;
@@ -231,6 +215,17 @@ h3 {
   font-style: italic;
 }
 .publication-list .venue-line span::before { content: "· "; }
+.publication-logo {
+  display: block;
+  height: auto;
+  margin-top: 12px;
+  max-height: 40px;
+  max-width: 76px;
+  object-fit: contain;
+  object-position: left center;
+  width: auto;
+}
+.publication-logo-wide { max-width: 120px; }
 .publication-action {
   border: 1px solid var(--line);
   border-radius: 7px;
@@ -249,25 +244,7 @@ h3 {
   background: #f7f4ef;
   border-color: #cfc9bf;
 }
-.journal-wordmark {
-  align-items: center;
-  background: #fff;
-  border: 2px solid currentColor;
-  color: var(--ink);
-  display: flex;
-  font-size: 1.15rem;
-  font-weight: 700;
-  height: 72px;
-  justify-content: center;
-  letter-spacing: -.04em;
-  width: 102px;
-}
-.journal-sr { color: #c92a2a; }
-.journal-am { color: #222; }
-.journal-ijhci { color: #1c5f91; font-size: .95rem; }
-.journal-vr { color: #075985; }
 .poster-heading { margin-top: 66px; }
-.poster-publication-list .publication-visual { background: #f8f8f6; }
 
 .more-section { border-bottom: 1px solid var(--line); margin-top: 28px; }
 .more-section summary {
@@ -329,22 +306,13 @@ footer p { margin: 0; }
   .section { padding: 72px 0 82px; }
   .section-title { align-items: start; display: block; }
   .section-title > p { margin: -36px 0 42px; }
-  .publication-visual { flex-basis: 136px; padding: 20px; }
   .publication-content { padding: 20px 21px 22px; }
 }
 
 @media (max-width: 460px) {
   body { font-size: 16px; }
   .timeline article { gap: 10px; grid-template-columns: 1fr; }
-  .publication-card { display: block; }
-  .publication-visual {
-    border-bottom: 1px solid #eeeae4;
-    border-right: 0;
-    height: 112px;
-    padding: 18px 28px;
-  }
-  .publication-visual img { max-height: 68px; max-width: 190px; }
-  .journal-wordmark { height: 62px; width: 92px; }
+  .publication-logo-wide { max-width: 108px; }
   .updates-list article { gap: 5px; grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 5px; }
 }
