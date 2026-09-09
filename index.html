@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -24,7 +26,7 @@
     <main id="top">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <h1 id="intro-title">Yechan Yang</h1>
+          <h1 id="intro-title" class="typed-heading" aria-label="Hello, I'm an Engineer and a Researcher"><span id="typed" aria-hidden="true">Hello, I'm an Engineer</span></h1>
           <p class="role"><strong>Ph.D. student · Biomedical Engineering</strong> at SNU</p>
           <p class="contact-links">
             <a href="mailto:santachan@snu.ac.kr">Email</a>
@@ -41,17 +43,17 @@
           <div>
             <h3>Education</h3>
             <div class="timeline">
-              <article><time>2026–present</time><p><strong>Seoul National University</strong><br />Ph.D. in Biomedical Engineering</p></article>
-              <article><time>2022–2024</time><p><strong>Korea University</strong><br />M.S. in Computer Science and Engineering</p></article>
-              <article><time>2016–2022</time><p><strong>Korea University</strong><br />B.S. in Mechanical Engineering</p></article>
+              <article><time>2026–present</time><div class="timeline-entry"><img class="institution-logo institution-logo-snu" src="./assets/affiliations/snu.png" alt="" aria-hidden="true" /><p><strong>Seoul National University</strong><br />Ph.D. in Biomedical Engineering</p></div></article>
+              <article><time>2022–2024</time><div class="timeline-entry"><img class="institution-logo" src="./assets/affiliations/korea-university.png" alt="" aria-hidden="true" /><p><strong>Korea University</strong><br />M.S. in Computer Science and Engineering</p></div></article>
+              <article><time>2016–2022</time><div class="timeline-entry"><img class="institution-logo" src="./assets/affiliations/korea-university.png" alt="" aria-hidden="true" /><p><strong>Korea University</strong><br />B.S. in Mechanical Engineering</p></div></article>
             </div>
           </div>
           <div>
             <h3>Research experience</h3>
             <div class="timeline">
-              <article><time>2025–present</time><p><strong>Seoul National University</strong><br />Brain–computer interfaces and biocomputing</p></article>
-              <article><time>2024–2025</time><p><strong>Korea Institute of Science and Technology</strong><br />Signal processing</p></article>
-              <article><time>2022–2024</time><p><strong>Korea University</strong><br />VR, cybersickness, and HCI</p></article>
+              <article><time>2025–present</time><div class="timeline-entry"><img class="institution-logo institution-logo-snu" src="./assets/affiliations/snu.png" alt="" aria-hidden="true" /><p><strong>Seoul National University</strong><br />Brain–computer interfaces and biocomputing</p></div></article>
+              <article><time>2024–2025</time><div class="timeline-entry"><img class="institution-logo" src="./assets/affiliations/kist.png" alt="" aria-hidden="true" /><p><strong>Korea Institute of Science and Technology</strong><br />Signal processing</p></div></article>
+              <article><time>2022–2024</time><div class="timeline-entry"><img class="institution-logo" src="./assets/affiliations/korea-university.png" alt="" aria-hidden="true" /><p><strong>Korea University</strong><br />VR, cybersickness, and HCI</p></div></article>
             </div>
           </div>
         </div>

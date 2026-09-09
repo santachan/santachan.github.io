@@ -60,7 +60,7 @@ footer {
   align-items: center;
   display: grid;
   gap: clamp(42px, 8vw, 88px);
-  grid-template-columns: minmax(0, 1fr) 184px;
+  grid-template-columns: minmax(0, 1fr) 212px;
   min-height: 500px;
   padding: 70px 0 110px;
 }
@@ -74,6 +74,14 @@ h1 {
   letter-spacing: -.035em;
   line-height: 1.02;
   margin: 0;
+}
+.typed-heading {
+  font-size: clamp(2.45rem, 6vw, 4.35rem);
+  min-height: 2.1em;
+}
+.typed-cursor {
+  color: var(--accent);
+  font-weight: 400;
 }
 .role {
   color: #4d4b46;
@@ -95,7 +103,7 @@ h1 {
   aspect-ratio: 4 / 5;
   filter: saturate(.82) contrast(.96);
   object-fit: cover;
-  width: 184px;
+  width: 212px;
 }
 
 .section {
@@ -138,6 +146,17 @@ h3 {
 }
 .timeline p { font-size: .91rem; margin: 0; }
 .timeline strong { font-weight: 600; }
+.timeline-entry {
+  align-items: start;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 38px minmax(0, 1fr);
+}
+.institution-logo {
+  height: 38px;
+  object-fit: contain;
+  width: 38px;
+}
 
 .section-title {
   align-items: baseline;
@@ -148,7 +167,9 @@ h3 {
 .section-title > p { color: var(--muted); font-size: .78rem; margin: 0; }
 .publication-kind-heading {
   color: var(--muted);
-  margin-bottom: 14px;
+  font-size: 1rem;
+  letter-spacing: .045em;
+  margin-bottom: 18px;
 }
 .publication-list {
   display: grid;
@@ -354,7 +375,7 @@ footer p { margin: 0; }
     padding: 54px 0 82px;
   }
   .intro-copy { grid-row: 2; }
-  .profile-photo { grid-row: 1; width: 132px; }
+  .profile-photo { grid-row: 1; width: 154px; }
   h1 { font-size: 3.25rem; }
   .about-grid { gap: 58px; grid-template-columns: 1fr; }
   .section { padding: 72px 0 82px; }
