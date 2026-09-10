@@ -176,22 +176,20 @@ h3 {
 
 .capability-grid {
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .capability-card {
   background: #fff;
   border: 1px solid #e8e5df;
   border-radius: 14px;
-  min-height: 150px;
-  padding: 23px 24px 25px;
+  padding: 20px 20px 21px;
 }
-.capability-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .capability-card h3 {
   color: var(--ink);
   font-size: .82rem;
   letter-spacing: .025em;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 }
 .capability-tags {
   display: flex;
@@ -480,6 +478,7 @@ footer p { margin: 0; }
 
 @media (max-width: 900px) {
   .research-interest { white-space: normal; }
+  .capability-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -508,8 +507,6 @@ footer p { margin: 0; }
     white-space: normal;
   }
   .about-grid { gap: 58px; grid-template-columns: 1fr; }
-  .capability-grid { grid-template-columns: 1fr; }
-  .capability-card:last-child:nth-child(odd) { grid-column: auto; }
   .section { padding: 72px 0 82px; }
   .section-title { align-items: start; display: block; }
   .section-title > p { margin: -36px 0 42px; }
